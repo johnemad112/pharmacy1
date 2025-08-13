@@ -96,7 +96,7 @@ function updateCart() {
     let total = 0;
     cart.forEach(item => {
         total += item.price;
-        cartItems.innerHTML += <li>${item.name} - ${item.price} جنيه</li>;
+        cartItems.innerHTML += '<li>${item.name} - ${item.price} جنيه</li>';
     });
 
     cartCount.textContent = cart.length;
@@ -138,4 +138,5 @@ document.getElementById("orderForm").addEventListener("submit", function(event) 
 // عرض المنتجات عند تحميل الصفحة
 
 displayProducts();
+
 
