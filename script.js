@@ -5,6 +5,21 @@ const products = [
     { name: "جهاز قياس ضغط", price: 120, img: "https://images.unsplash.com/photo-1588776814546-2f9f4b4b2ff6?w=400" },
     { name: "ميزان حرارة", price: 25, img: "https://images.unsplash.com/photo-1588774069270-3a9a6aefc7e5?w=400" },
     { name: "شراب فيتامين د", price: 30, img: "https://images.unsplash.com/photo-1617396900799-efda33d07d59?w=400" }
+    { name: "بانادول", price: 25, category: "medicine", quantity: 100, img: "https://i.imgur.com/4Hk8Ygk.jpg" },
+    { name: "كونجستال", price: 30, category: "medicine", quantity: 80, img: "https://i.imgur.com/bxJcspW.jpg" },
+    { name: "فلوموكس", price: 45, category: "medicine", quantity: 60, img: "https://i.imgur.com/fJm9lMp.jpg" },
+    { name: "كتافلام", price: 35, category: "medicine", quantity: 90, img: "https://i.imgur.com/7ThzbmM.jpg" },
+    { name: "اموكسيل", price: 40, category: "medicine", quantity: 70, img: "https://i.imgur.com/EJg8nU0.jpg" },
+    { name: "فيتامين سي", price: 50, category: "vitamins", quantity: 120, img: "https://i.imgur.com/TYN7iMZ.jpg" },
+    { name: "فيتامين د", price: 60, category: "vitamins", quantity: 110, img: "https://i.imgur.com/24oU2Lb.jpg" },
+    { name: "زنك", price: 55, category: "vitamins", quantity: 95, img: "https://i.imgur.com/EReJYYp.jpg" },
+    { name: "أوميجا 3", price: 90, category: "vitamins", quantity: 85, img: "https://i.imgur.com/uxjZ0XE.jpg" },
+    { name: "كالسيوم", price: 70, category: "vitamins", quantity: 60, img: "https://i.imgur.com/ucQHyeA.jpg" },
+    { name: "جهاز قياس الضغط", price: 650, category: "devices", quantity: 20, img: "https://i.imgur.com/3J32B6O.jpg" },
+    { name: "جهاز قياس السكر", price: 500, category: "devices", quantity: 25, img: "https://i.imgur.com/y9ezYl2.jpg" },
+    { name: "ميزان حرارة ديجيتال", price: 150, category: "devices", quantity: 40, img: "https://i.imgur.com/3dGJKnR.jpg" },
+    { name: "جهاز استنشاق", price: 400, category: "devices", quantity: 15, img: "https://i.imgur.com/H4yV7Lb.jpg" },
+    { name: "مشاية طبية", price: 1200, category: "devices", quantity: 10, img: "https://i.imgur.com/lMbWe0J.jpg" },
 ];
 
 // 🛒 بيانات السلة
@@ -100,4 +115,5 @@ document.getElementById("orderForm").addEventListener("submit", function(event) 
 });
 
 // عرض المنتجات عند تحميل الصفحة
+
 displayProducts();
