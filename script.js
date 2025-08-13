@@ -1,5 +1,26 @@
 // قائمة المنتجات
 const products = [
+       {
+        name: "بانادول",
+        price: 25,
+        image: "https://example.com/panadol.jpg",
+        category: "medicine",
+        quantity: 50
+    },
+    {
+        name: "فيتامين C",
+        price: 15,
+        image: "https://example.com/vitaminC.jpg",
+        category: "vitamins",
+        quantity: 30
+    },
+    {
+        name: "ميزان حرارة",
+        price: 60,
+        image: "https://example.com/thermometer.jpg",
+        category: "devices",
+        quantity: 20
+    }
     { name: "دواء مسكن", price: 20, img: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400" },
     { name: "فيتامين C", price: 15, img: "https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=400" },
     { name: "جهاز قياس ضغط", price: 120, img: "https://images.unsplash.com/photo-1588776814546-2f9f4b4b2ff6?w=400" },
@@ -117,3 +138,4 @@ document.getElementById("orderForm").addEventListener("submit", function(event) 
 // عرض المنتجات عند تحميل الصفحة
 
 displayProducts();
+
