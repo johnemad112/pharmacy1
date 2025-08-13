@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صيدلية لطفي</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("NFl82aaLTB_YeWrdZ"); /* ✅ Public Key */
+        })();
+    </script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>صيدلية لطفي</h1>
+    <nav>
+        <a href="#about">من نحن</a>
+        <a href="#services">خدماتنا</a>
+        <a href="#products">منتجاتنا</a>
+        <a href="#contact">اتصل بنا</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>من نحن</h2>
+    <p>صيدلية لطفي تقدم أفضل الأدوية والخدمات الطبية ، مع التزام كامل بصحتكم وعافيتكم.</p>
+</section>
+
+<section id="services">
+    <h2>خدماتنا</h2>
+    <ul>
+        <li>بيع الأدوية الموصوفة</li>
+        <li>الفيتامينات والمكملات الغذائية</li>
+        <li>أجهزة طبية منزلية</li>
+    </ul>
+</section>
+
+<section id="search">
+    <!-- 🔍 مربع البحث -->
+    <input type="text" id="search-box" placeholder="ابحث عن المنتج..." onkeyup="searchProducts()">
+</section>
+
+<section id="products">
+    <h2>منتجاتنا</h2>
+    <div class="product-grid" id="product-list">
+        <!-- المنتجات تضاف من JavaScript -->
+    </div>
+</section>
+
+<section id="cart">
+    <h2>سلة المشتريات (<span id="cart-count">0</span>)</h2>
+    <ul id="cart-items"></ul>
+    <p>الإجمالي: <span id="cart-total">0</span> جنيه</p>
+
+    <h3>بيانات المشتري</h3>
+    <form id="orderForm">
+        <input type="text" id="buyer_name" placeholder="الاسم" required>
+        <input type="text" id="buyer_phone" placeholder="الهاتف" required>
+        <input type="email" id="buyer_email" placeholder="البريد الإلكتروني" required>
+        <input type="text" id="buyer_address" placeholder="العنوان" required>
+        <button type="submit">إرسال الطلب</button>
+    </form>
+</section>
+
+<section id="contact">
+    <h2>اتصل بنا</h2>
+    <p>📍 العنوان: شارع شبرا بجوار التوحيد والنور ١١٠، شبرا مصر</p>
+    <p>📞 الهاتف: 01211630677</p>
+    <p>📧 البريد: info@pharmacy.com</p>
+</section>
+
+<footer>
+    <p>© 2025 جميع الحقوق محفوظة - صيدلية لطفي</p>
+</footer>
+
+</body>
+</html>
